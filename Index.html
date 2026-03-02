@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Shital Rahul Kumbhar | 2026 Teaching Portfolio</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:'Inter',sans-serif;}
+body{
+background:linear-gradient(-45deg,#0f0c29,#1f1c2c,#302b63,#24243e);
+background-size:400% 400%;
+animation:bgMove 15s ease infinite;
+color:white;
+overflow-x:hidden;
+}
+@keyframes bgMove{
+0%{background-position:0% 50%;}
+50%{background-position:100% 50%;}
+100%{background-position:0% 50%;}
+}
+
+/* Navbar */
+nav{
+position:fixed;
+top:20px;
+left:50%;
+transform:translateX(-50%);
+background:rgba(255,255,255,0.08);
+padding:10px 30px;
+border-radius:50px;
+backdrop-filter:blur(15px);
+z-index:1000;
+box-shadow:0 0 20px rgba(0,255,255,0.3);
+}
+nav a{
+color:white;
+margin:0 15px;
+text-decoration:none;
+font-weight:500;
+}
+
+/* Hero */
+header{
+height:100vh;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+text-align:center;
+padding:0 10%;
+}
+header h1{
+font-family:'Orbitron',sans-serif;
+font-size:56px;
+background:linear-gradient(90deg,#00f5ff,#ff00c8);
+-webkit-background-clip:text;
+-webkit-text-fill-color:transparent;
+}
+header p{
+margin-top:20px;
+opacity:0.85;
+font-size:20px;
+max-width:700px;
+}
+
+/* Button */
+.btn{
+margin-top:30px;
+padding:12px 30px;
+border-radius:50px;
+border:none;
+background:linear-gradient(45deg,#00f5ff,#ff00c8);
+color:white;
+cursor:pointer;
+font-weight:600;
+transition:0.3s;
+}
+.btn:hover{
+transform:scale(1.1);
+box-shadow:0 0 25px #ff00c8;
+}
+
+/* Sections */
+section{
+padding:100px 10%;
+}
+.section-title{
+font-size:32px;
+margin-bottom:40px;
+border-left:4px solid #00f5ff;
+padding-left:15px;
+}
+
+/* Glass Card */
+.card{
+background:rgba(255,255,255,0.05);
+padding:30px;
+border-radius:20px;
+backdrop-filter:blur(15px);
+border:1px solid rgba(255,255,255,0.1);
+transition:0.4s;
+transform-style:preserve-3d;
+}
+.card:hover{
+transform:rotateY(5deg) rotateX(5deg);
+box-shadow:0 0 40px rgba(0,255,255,0.5);
+}
+
+/* Metrics */
+.metrics{
+display:flex;
+flex-wrap:wrap;
+gap:40px;
+}
+.metric{
+font-size:40px;
+font-weight:700;
+color:#00f5ff;
+}
+.metric-label{
+opacity:0.8;
+}
+
+/* Skills */
+.skills{
+display:flex;
+flex-wrap:wrap;
+gap:15px;
+}
+.skill{
+padding:12px 20px;
+border-radius:50px;
+background:linear-gradient(45deg,#00f5ff,#ff00c8);
+cursor:pointer;
+transition:0.3s;
+}
+.skill:hover{
+transform:scale(1.15);
+box-shadow:0 0 15px #ff00c8;
+}
+
+/* Fade In */
+.fade{
+opacity:0;
+transform:translateY(40px);
+transition:0.8s ease;
+}
+.fade.show{
+opacity:1;
+transform:translateY(0);
+}
+
+footer{
+text-align:center;
+padding:40px;
+opacity:0.7;
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+<a href="#about">About</a>
+<a href="#impact">Impact</a>
+<a href="#experience">Experience</a>
+<a href="#skills">Skills</a>
+</nav>
+
+<header>
+<h1>Shital Rahul Kumbhar</h1>
+<p>Primary Educator shaping confident, disciplined and concept-strong young learners through structured, engaging and activity-driven teaching methodologies.</p>
+<button class="btn" onclick="document.getElementById('impact').scrollIntoView()">Explore Impact</button>
+</header>
+
+<section id="about" class="fade">
+<h2 class="section-title">Professional Profile</h2>
+<div class="card">
+Primary Teacher with 6+ years of experience across English and Marathi medium institutions. Specialized in foundational development of English, Mathematics, Science, Marathi, Hindi, History and Civics. Focused on concept clarity, discipline building and academic excellence. Known for improving student confidence, participation and classroom engagement.
+</div>
+</section>
+
+<section id="impact" class="fade">
+<h2 class="section-title">Student Impact & Achievements</h2>
+<div class="metrics">
+<div>
+<div class="metric" data-target="500">0</div>
+<div class="metric-label">Students Mentored</div>
+</div>
+<div>
+<div class="metric" data-target="95">0</div>
+<div class="metric-label">% Average Class Pass Rate</div>
+</div>
+<div>
+<div class="metric" data-target="6">0</div>
+<div class="metric-label">Years Teaching Experience</div>
+</div>
+</div>
+</section>
+
+<section id="experience" class="fade">
+<h2 class="section-title">Teaching Experience</h2>
+<div class="card">
+<h3>Vedant English Medium School</h3>
+<ul>
+<li>Handled core primary subjects with structured lesson planning</li>
+<li>Implemented activity-based and interactive learning</li>
+<li>Conducted assessments and progress analysis</li>
+<li>Organized academic events and competitions</li>
+</ul>
+<br>
+<h3>Kalyani Marathi Medium School</h3>
+<ul>
+<li>Focused on foundational literacy and numeracy</li>
+<li>Improved performance of slow learners through mentoring</li>
+<li>Maintained disciplined and positive classroom environment</li>
+</ul>
+</div>
+</section>
+
+<section id="skills" class="fade">
+<h2 class="section-title">Core Teaching Competencies</h2>
+<div class="skills">
+<div class="skill">Classroom Management</div>
+<div class="skill">Lesson Planning</div>
+<div class="skill">Student Engagement</div>
+<div class="skill">Activity-Based Learning</div>
+<div class="skill">Assessment & Evaluation</div>
+<div class="skill">MS-CIT Certified</div>
+<div class="skill">Bilingual Instruction</div>
+<div class="skill">Parent Communication</div>
+</div>
+</section>
+
+<footer>
+© 2026 Shital Rahul Kumbhar | Advanced Digital Teaching Portfolio
+</footer>
+
+<script>
+// Scroll Reveal
+const faders=document.querySelectorAll('.fade');
+window.addEventListener('scroll',()=>{
+faders.forEach(el=>{
+const top=el.getBoundingClientRect().top;
+if(top<window.innerHeight-100){
+el.classList.add('show');
+}
+});
+});
+
+// Counter Animation
+const counters=document.querySelectorAll('.metric');
+const speed=100;
+
+counters.forEach(counter=>{
+const update=()=>{
+const target=+counter.getAttribute('data-target');
+const count=+counter.innerText;
+const inc=target/speed;
+if(count<target){
+counter.innerText=Math.ceil(count+inc);
+setTimeout(update,30);
+}else{
+counter.innerText=target;
+}
+};
+update();
+});
+</script>
+
+</body>
+</html>
